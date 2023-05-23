@@ -19,16 +19,11 @@
    General Notes:
     - The modulo operator is different in different programming languages, in C the modulo operator is equivalent to the remainder of A/B, that is if you hand divided the remainder is what is outputted.
     - Change the datatypes from int to a bigger data type to do larger numbers.
+
+    YouTube Videos:
+     - https://www.youtube.com/watch?v=Jwf6ncRmhPg&t=342s
+     - https://www.youtube.com/watch?v=IwRtISxAHY4
  */
-
-int main(int argc, char *argv[]) {
-   int m = atoi(argv[1]);
-   int n = atoi(argv[2]);
-
-   printf("Final Number: %d\n", euclids(&m, &n));
-   return(0);
-}
-
 int euclids(int *numberOne, int *numberTwo) {
    int buffer = 0;
    if (*numberOne == 0) {
@@ -51,4 +46,12 @@ int euclids(int *numberOne, int *numberTwo) {
    }
 
    return(*numberOne);
+}
+
+int main(int argc, char *argv[]) {
+   int m = atoi(argv[1]);
+   int n = atoi(argv[2]);
+
+   printf("Final Number: %d\n", euclids(&m, &n));
+   return(0);
 }
